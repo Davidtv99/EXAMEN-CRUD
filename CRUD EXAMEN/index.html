@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./w3.css">
+    <link rel="stylesheet" href="./estilos.css">
+    <title>CRUD Javascript ConfiguroWeb</title>
+  </head>
+
+  <body>
+    <nav class="navbar">
+        <h1>EXAMEN GRUD</h1>
+    </nav>
+    <div class="father">
+        
+        <form class="container" onsubmit="event.preventDefault()">
+
+          <input class="input-top" id="fname" name="fname" placeholder="Nombre" />
+          <input class="w3-input" id="lname" name="lname" placeholder="Apellido" />
+          <button class="button-large" onclick="clearForm()">Limpiar Formulario</button>
+          <br /><br />
+            <div class="container-button">
+                <button class="button1 " onclick="create()">Crear</button>
+                <button class="button2 " onclick="update()">Actualizar</button>
+                <button class="button3 " onclick="deleteItem()">Eliminar</button>
+            </div>
+          
+          <br /><br />
+          <select class="output" id="panel" size="20" onclick="panelClick()"> </select>
+        </form>
+    </div>
+    <footer>
+
+    </footer>
+
+    <script src="crud.js">
+    </script>
+
+  </body>
+</html>
